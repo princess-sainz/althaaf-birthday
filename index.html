@@ -1,86 +1,122 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ucapan Ulang Tahun</title>
-  <style>
-    body {
-      background: linear-gradient(to right, #fceabb, #f8b500);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 50px;
-      color: #4a2c2a;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ucapan Ulang Tahun dengan Bouquet</title>
+<style>
+  body {
+    background: #f8f0e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding: 30px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #c94f67;
+  }
+  p {
+    max-width: 500px;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
+  /* BOUQUET */
+  .bouquet {
+    position: relative;
+    width: 150px;
+    height: 180px;
+  }
 
-    p {
-      font-size: 24px;
-      max-width: 600px;
-      margin: 0 auto 40px;
-    }
+  /* Bunganya */
+  .flower {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f49fb4, #f0708f);
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 10px rgba(244, 159, 180, 0.7);
+  }
+  .flower:nth-child(1) {
+    top: 0; left: 50px;
+  }
+  .flower:nth-child(2) {
+    top: 20px; left: 20px;
+  }
+  .flower:nth-child(3) {
+    top: 20px; left: 80px;
+  }
+  .flower:nth-child(4) {
+    top: 50px; left: 0;
+  }
+  .flower:nth-child(5) {
+    top: 50px; left: 65px;
+  }
+  .flower:nth-child(6) {
+    top: 70px; left: 40px;
+  }
 
-    .flower {
-      width: 120px;
-      height: 120px;
-      margin: 20px auto;
-      position: relative;
-    }
+  /* Daun */
+  .leaf {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: linear-gradient(45deg, #7aba6a, #4c6e30);
+    border-radius: 50% / 100%;
+    transform: rotate(-20deg);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .leaf:nth-child(7) {
+    top: 90px; left: 10px;
+    transform: rotate(-30deg);
+  }
+  .leaf:nth-child(8) {
+    top: 110px; left: 40px;
+    transform: rotate(10deg);
+  }
+  .leaf:nth-child(9) {
+    top: 95px; left: 80px;
+    transform: rotate(25deg);
+  }
 
-    .petal {
-      width: 60px;
-      height: 60px;
-      background: pink;
-      border-radius: 50%;
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      transform-origin: center;
-    }
+  /* Tali/bungkusan */
+  .tie {
+    position: absolute;
+    bottom: 0;
+    left: 55px;
+    width: 40px;
+    height: 20px;
+    background: #c94f67;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 5px rgba(201,79,103,0.7);
+  }
 
-    .petal:nth-child(1) { transform: rotate(0deg) translateY(-40px); }
-    .petal:nth-child(2) { transform: rotate(72deg) translateY(-40px); }
-    .petal:nth-child(3) { transform: rotate(144deg) translateY(-40px); }
-    .petal:nth-child(4) { transform: rotate(216deg) translateY(-40px); }
-    .petal:nth-child(5) { transform: rotate(288deg) translateY(-40px); }
-
-    .center {
-      width: 40px;
-      height: 40px;
-      background: yellow;
-      border-radius: 50%;
-      position: absolute;
-      top: 40px;
-      left: 40px;
-      z-index: 1;
-    }
-
-    .footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #333;
-    }
-  </style>
+</style>
 </head>
 <body>
-  <h1>Selamat Ulang Tahun! 🎉</h1>
-  <p>Semoga hari ulang tahunmu penuh dengan kebahagiaan, cinta, dan senyuman. Semoga semua impianmu tercapai dan harimu seindah bunga yang sedang mekar!</p>
 
-  <div class="flower">
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="center"></div>
-  </div>
+<h1>Selamat Ulang Tahun!</h1>
+<p>Semoga hari ini penuh kebahagiaan dan bunga-bunga indah yang mewarnai hidupmu.</p>
 
-  <div class="footer">
-    &copy; 2025 Dibuat dengan cinta 💖
-  </div>
+<div class="bouquet">
+  <div class="flower"></div>
+  <div class="flower"></div>
+  <div class="flower"></div>
+  <div class="flower"></div>
+  <div class="flower"></div>
+  <div class="flower"></div>
+
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+
+  <div class="tie"></div>
+</div>
+
 </body>
 </html>
