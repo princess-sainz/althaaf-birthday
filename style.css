@@ -16,22 +16,28 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1 {
   color: #ff6b6b;
+  font-size: 11.8em;
+}
+
+h2 {
+  color: #ff6b6b;
+  font-size: 11.5em;
 }
 
 p {
   color: #666;
-  font-size: 11.1em;
-  line-height: 11.6em;
+  font-size: 1em;
+  line-height: 1.6em;
 }
 
 button {
   background-color: #4ecdc4;
   color: #fff;
   border: none;
-  padding: 15px 30px;
-  font-size: 1.1em;
+  padding: 10px 20px;
+  font-size: 1em;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -44,15 +50,15 @@ button:hover {
 
 .pixel-flower {
   display: grid;
-  grid-template-columns: repeat(10, 20px);
+  grid-template-columns: repeat(5, 30px);
   gap: 2px;
   justify-content: center;
   margin: 20px auto;
 }
 
 .pixel {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: #eee;
 }
 
@@ -64,8 +70,16 @@ button:hover {
   background-color: #ffd700;
 }
 
+.pixel.red {
+  background-color: #ff3333;
+}
+
 .pixel.green {
   background-color: #2ecc71;
+}
+
+.pixel.white {
+  background-color: #ffffff;
 }
 
 .card {
